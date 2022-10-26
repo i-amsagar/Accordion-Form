@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Icon Link -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Accordion Form</title>
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ICONS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav>
+            <a href="#" class="logo"><img src="./assets/images/logo.png" alt="logo.."></a>
+        </nav>
+    </header>
+
+    <!-- Message Section -->
+    <div class="message">
+        <p class="show-message" id="success"><i class="fa-solid fa-check"></i> Yzou have successfully signed up</p>
+    </div>
+    <!-- Accordion Section -->
+    <div class="accordion">
+
+        <!-- Address Section -->
+        <div class="accordion-item">
+            <div class="accordion-item-header">Address <img src="./assets/images/clearIcon.png" class="img_Show" alt="">
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <form id="form" action="">
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Address Type</h4>
+                                <label class="container container_change">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                    Residential
+                                </label>
+                                <label class="container container_change">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    Business
+                                </label>
+                                <label class="container container_change">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    Others
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input_box">
+                            <h4>Address Line 1</h4>
+                            <input type="text" placeholder="eg: House no., House Name" class="name input_user" required>
+                        </div>
+
+                        <div class="input_box">
+                            <h4>Address Line 2</h4>
+                            <input type="text" placeholder="eg: Street no., Landmark" class="name input_user" required>
+                        </div>
+
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Pincode</h4>
+                                <input type="number" placeholder="242153" class="name" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>City</h4>
+                                <input type="text" placeholder="Anantnag" class="name" required>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>State</h4>
+                                <input type="text" placeholder="Jammu & kashmir" class="name" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>Country</h4>
+                                <input type="text" placeholder="India" class="name" required>
+                            </div>
+                        </div>
+                        <!-- <button id="jsh"  onClick="message(this.form)" type="submit">Save & Continue</button> -->
+                        <button id="jsh" type="submit">Save & Continue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Details Section -->
+        <div class="accordion-item">
+            <div class="accordion-item-header">Personal Details <img src="./assets/images/clearIcon.png"
+                    class="img_Show" alt=""></div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <form id="form" action="">
+                        <!-- Select Selction -->
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Select Family Member</h4>
+                                <select name="" id="" class="select">
+                                    <option value="">Select</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--DOB & Gender Start-->
+                        <div class="input_group">
+                            <div class="input_group">
+                                <div class="input_box">
+                                    <h4>DOB</h4>
+                                    <input type="number" placeholder="25" required class="dob">
+                                    <input type="number" placeholder="06" required class="dob">
+                                    <input type="number" placeholder="1980" required class="dob">
+                                </div>
+                                <div class="input_group">
+                                    <div class="input_box">
+                                        <h4>Gender</h4>
+                                        <label class="container">
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                            Male
+                                        </label>
+                                        <label class="container">
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                            Female
+                                        </label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Marital Section -->
+                                <div class="input_group">
+                                    <div class="input_box">
+                                        <h4>Marital Status</h4>
+                                        <select name="" id="" class="select">
+                                            <option value="">Single</option>
+                                            <option value="">Married</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pan Card Section -->
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Pan Number</h4>
+                                <input type="text" name="" class="name" placeholder="ABCDE12345Z" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>Father's Name</h4>
+                                <input type="text" name="" class="name input_user"
+                                    placeholder="Father's Name (as per PAN)" required>
+                            </div>
+                        </div>
+                        <!-- Occupation Section -->
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Occupation</h4>
+                                <label class="container container_change">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                    Service
+                                </label>
+                                <label class="container container_change">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    Business
+                                </label>
+                                <label class="container container_change">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    Others
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Income Slab -->
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Income Slab</h4>
+                                <div class="range_values">
+                                    <p class="range_show">1 Lakh</p>
+                                    <p class="range_show">5 Lakh</p>
+                                    <p class="range_show">10 Lakh</p>
+                                    <p class="range_show">25 Lakh</p>
+                                    <p class="range_show">1 Cr</p>
+                                </div>
+                                <div class="range_values">
+                                    <span class="range_distance">|</span>
+                                    <span class="range_distance">|</span>
+                                    <span class="range_distance">|</span>
+                                    <span class="range_distance">|</span>
+                                    <span class="range_distance">|</span>
+                                </div>
+                                <div class="range_box">
+                                    <input type="range" name="" class="range" value="0" min="1" max="20">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="jsh" type="submit">Save & Continue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bank Details Section -->
+        <div class="accordion-item">
+            <div class="accordion-item-header">Bank Details <img src="./assets/images/clearIcon.png" class="img_Show"
+                    alt=""></div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <form id="form" action="">
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>IFSC Code</h4>
+                                <input type="text" placeholder="KOTK0000562" class="name" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>Bank Account Number</h4>
+                                <input type="number" placeholder="5215000042003689" class="name" required>
+                            </div>
+                        </div>
+
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Bank</h4>
+                                <input type="text" placeholder="Kotak Mahindra Bank" class="name" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>Branch</h4>
+                                <input type="text" placeholder="Gurgaon South City" class="name" required>
+                            </div>
+                        </div>
+
+                        <div class="input_box">
+                            <h4>Address</h4>
+                            <!-- <input type="text" placeholder="Plot No. K-3, Brahm Datt Tower,Grd and 1ST Floor Sector -18, Noida - 210 301." class="name input_user" required> -->
+                            <textarea name="" id=""
+                                placeholder="Plot No. K-3, Brahm Datt Tower,Grd and 1ST Floor Sector -18, Noida - 210 301."
+                                class="name input_user" required></textarea>
+                        </div>
+                        <button id="jsh" type="submit">Save &amp; Continue</button>
+                    </form id="form">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fatca compliance Section -->
+        <div class="accordion-item">
+            <div class="accordion-item-header">Fatca compliance <img src="./assets/images/clearIcon.png"
+                    class="img_Show" alt=""></div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <form id="form" action="">
+                        <!-- Country Section -->
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Birth Country</h4>
+                                <input type="text" placeholder="India" class="name" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>Nationality</h4>
+                                <input type="text" placeholder="Indian" class="name" required>
+                            </div>
+                            <div class="input_box">
+                                <h4>Tax redidency</h4>
+                                <input type="text" placeholder="India" class="name" required>
+                            </div>
+                        </div>
+
+                        <!-- Policital Exposure Section -->
+                        <div class="input_group">
+                            <div class="input_box">
+                                <h4>Policital Exposure</h4>
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                    Yes
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    No
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    Related
+                                </label>
+                            </div>
+                        </div>
+                        <button id="jsh" type="submit">Save &amp; Continue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- One Last Step Section -->
+        <div class="accordion-item">
+            <div class="accordion-item-header">One Last Step And You Done... <img src="./assets/images/clearIcon.png"
+                    class="img_Show" alt=""></div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    <form id="form" action="">
+                        <!-- Pand Card Image Section -->
+                        <div class="input_box">
+                            <h4>Pand Card Image</h4>
+                            <div class="fileUploadWrap">
+                                <i class="fa-solid fa-plus"></i>
+                                <input type="file" name="fileToUpload">
+                                <p class="fileName">Select A File</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+
+                        <!-- Bank Proof Image Section -->
+                        <div class="input_box">
+                            <h4>Bank Proof Image</h4>
+                            <div class="file_data">
+                                <img src="./assets/images/clearIcon.png" alt="">
+                                <div class="file_data_item">
+                                    <p>file name.jpg</p>
+                                    <p><span>1.2KB</span></p>
+                                    <p><span>Remove</span></p>
+                                </div>
+                            </div>
+                            <div class="fileUploadWrap">
+                                <i class="fa-solid fa-plus"></i>
+                                <input type="file" name="fileToUpload">
+                                <p class="fileName">Add More Files</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+
+                        <!-- Bank Proof Image Section -->
+                        <div class="input_box">
+                            <h4>Correspondence Address Proof</h4>
+                            <div class="file_data">
+                                <img src="./assets/images/clearIcon.png" alt="">
+                                <div class="file_data_item">
+                                    <p>file name.jpg</p>
+                                    <p><span>1.2KB</span></p>
+                                    <p><span>Remove</span></p>
+                                </div>
+                            </div>
+                            <div class="file_data">
+                                <img src="./assets/images/clearIcon.png" alt="">
+                                <div class="file_data_item">
+                                    <p>file name.jpg</p>
+                                    <p><span>1.2KB</span></p>
+                                    <p><span>Remove</span></p>
+                                </div>
+                            </div>
+                            <div class="file_data">
+                                <img src="./assets/images/clearIcon.png" alt="">
+                                <div class="file_data_item">
+                                    <p>file name.jpg</p>
+                                    <p><span>1.2KB</span></p>
+                                    <p><span>Remove</span></p>
+                                </div>
+                            </div>
+                            <div class="fileUploadWrap">
+                                <i class="fa-solid fa-plus"></i>
+                                <input type="file" name="fileToUpload">
+                                <p class="fileName">Add More Files</p>
+                            </div>
+                            <div class="space"></div>
+                        </div>
+
+                        <button id="jsh" type="submit" class="submit_btn">Will Upload Later</button>
+                        <button id="jsh" type="submit">Done</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS FILe LINK -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
